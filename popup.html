@@ -3,8 +3,7 @@
     <head>
     </head>
     <body>
-            <form>
-	        <table style = "width : 100%">
+	        <table>
                 <tr>
                 <td>
                 <select name="SSDropDown">
@@ -13,10 +12,17 @@
 		</select>
                 </td>
                 <td>
-  		<input type="search" name="googlesearch" results = 5 placeholder = "Google Search" onsearch="alert('Текущее значение поле поиска'+ input.value)">
+  		<input type="search" id="googlesearch" placeholder = "Google Search" onsearch="myFunction()" />
                 </td> 
                 </tr>
                 </table>
-           </form>
+           <a href = "http://www.google.com" target = "_blank"> GOOGLE </a>
+           <p id="demo"></p>
+	   <script>
+		function myFunction() {
+   			var x = document.getElementById("googlesearch");
+   			document.getElementById("demo").innerHTML = "You are searching for: " + x.value;
+		}
+	   </script>
     </body>
 </html>

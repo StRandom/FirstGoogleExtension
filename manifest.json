@@ -12,9 +12,15 @@
     },
     "default_popup": "popup.html"
   }
+    "content_scripts":[
+        {
+            "css":["style.css"],
+            "js":["jquery.js"]
+        }
+    ]
   
   "permissions": [
         "tabs",
-	"alert"
+	"alarms"
     ]
 }
