@@ -4,11 +4,18 @@
   "name": "Google/Yandex Search box",
   "description": "This extension shows a search result.",
   "version": "1.0",
+  
+  "icons": { 
+    "128": "images/icon128.png",
+    "64": "images/icon64.png",
+    "32": "images/icon38.png",
+    "16": "images/icon19.png"
+  },
 
   "browser_action": {
     "default_icon": {
 	    "19" : "images/icon19.png",
-        "38" : "images/icon38.png"
+      "38" : "images/icon38.png"
     },
     "default_popup": "popup.html"
   },
