@@ -12,10 +12,6 @@
     },
     "default_popup": "popup.html"
   },
- 
-  "background": {
-    "persistent": false
-  },
   
   "permissions": [
         "tabs",
