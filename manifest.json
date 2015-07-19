@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Google/Yandex Search box",
+  "description": "This extension shows a search result.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": {
+	    "19" : "images/icon19.png",
+        "38" : "images/icon38.png"
+    },
+    "default_popup": "popup.html"
+  }
+  
+  "permissions": [
+        "tabs",
+	"alert"
+    ]
+}
