@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 18px; 
+            }
+            input, textarea { 
+                width: 420px; 
+            }
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+        </style>
     </head>
     <body>
 	        <table>
                 <tr>
                 <td>
-                <select name="SSDropDown">
-			<option value="Google"><img src="images/google.png"> G </option>
-			<option value="Yandex"><img src="images/yandex.png"> Y </option>
+                <select id="SSDropDown">
+			<option value="Google" style="background-image:url(images/google.png);" selected> G </option>
+			<option value="Yandex" style="background-image:url(images/yandex.png);"> Y </option>
 		</select>
                 </td>
                 <td>
-  		<input type="search" id="googlesearch" placeholder = "Google Search" onsearch="myFunction()" />
+  		<input type="search" id="googlesearch" placeholder = "Search" onsearch="onSearch()"/>
                 </td> 
                 </tr>
                 </table>
-           <a href = "http://www.google.com" target = "_blank"> GOOGLE </a>
-           <p id="demo"></p>
 	   <script>
-		function myFunction() {
+		function onSearch() {
    			var x = document.getElementById("googlesearch");
-   			document.getElementById("demo").innerHTML = "You are searching for: " + x.value;
+			var y = document.getElementById("SSDropDown");
+			if (y.value == "Google") {
+        			window.open("https://www.google.ru/webhp?sourceid=chrome-instant&rlz=1C1CHMO_enRU594RU594&ion=1&espv=2&ie=UTF-8#q=" + x.value, '_blank');
+			} else {
+			        window.open("https://www.yandex.com/search/?lr=87&text=" + x.value, '_blank');
+			}
 		}
 	   </script>
     </body>
