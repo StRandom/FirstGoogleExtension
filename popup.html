@@ -3,13 +3,13 @@
     <head>
          <style>
             body { 
-                min-width: 420px; 
                 overflow-x: hidden; 
                 font-family: Arial, sans-serif; 
-                font-size: 18px; 
+                font-size: 18px;
+		        background:blue;
             }
             input, textarea { 
-                width: 420px; 
+                width: 400px; 
             }
             input#save { 
                 font-weight: bold; width: auto; 
@@ -17,19 +17,19 @@
         </style>
     </head>
     <body>
-	        <table>
-                <tr>
+	    <table>
+            <tr>
                 <td>
-                <select id="SSDropDown">
-			<option value="Google" style="background-image:url(images/google.png);" selected> G </option>
-			<option value="Yandex" style="background-image:url(images/yandex.png);"> Y </option>
-		</select>
+                    <select id="SSDropDown">
+			            <option value="Google" style="background-image:url(images/google.png);" selected> G </option>
+			            <option value="Yandex" style="background-image:url(images/yandex.png);"> Y </option>
+		            </select>
                 </td>
                 <td>
-  		<input type="search" id="gysearch" placeholder = "Search"/>
-                 <script type="text/javascript" src = "popup.js"> </script>
+  		            <input type="search" id="gysearch" placeholder = "Search"/>
+                    <script type="text/javascript" src = "popup.js"> </script>
                 </td> 
-                </tr>
-                </table>
+            </tr>
+        </table>
     </body>
 </html>
